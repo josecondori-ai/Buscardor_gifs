@@ -1,0 +1,8 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">Listado de busqueda:</h3>
+    <hr>
+    <div class="list-group list-reset">
+        
+        <button *ngFor="let tag of tags"   (click)="searchTag(tag)"class="list-group-item list-group-item-action">{{tag}}</button>
+    </div>
+</div>
